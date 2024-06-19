@@ -2,7 +2,6 @@ import logging
 from importlib.metadata import entry_points
 
 from fastapi import FastAPI
-from fastapi.openapi.utils import get_openapi
 
 log = logging.getLogger(__name__)
 
