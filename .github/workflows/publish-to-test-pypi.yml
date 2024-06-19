@@ -101,10 +101,7 @@ jobs:
     needs:
     - build
     runs-on: ubuntu-latest
-    on:
-      push:
-        branches:
-          - dev
+    if: github.ref == 'refs/heads/dev'
 
     environment:
       name: testpypi
