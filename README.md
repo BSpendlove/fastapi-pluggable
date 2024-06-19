@@ -4,7 +4,7 @@ Make your FastAPI app pluggable with entrypoints.
 
 This module is mainly aimed around monolithic applications where you would install your applications via a package registry, treating each plugin application as a separate repository that imports a core application to use the common functionality like HTML templates, dependencies and more!
 
-Using entry points, we can treat each separate plugin as a separate installation module, here is an example using Poetry with the `pyproject.toml`, 
+Using entry points, we can treat each separate plugin as a separate installable module, here is an example using Poetry with the `pyproject.toml`, 
 
 ```
 [tool.poetry.plugins."myapp.plugins"]
